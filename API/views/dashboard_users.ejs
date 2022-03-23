@@ -1,0 +1,25 @@
+<%- include('dashboard_Header') -%>
+
+        <h1 id="tag" class="h2">Web site users</h1><hr>
+      </div>
+       <% users.forEach(e=>{ %>
+        <div class="feed-card post">
+          <div class="post-header">
+            <p><i class="bi bi-person-bounding-box"></i></p>
+            <div class="post-info">
+              <h3 class="post-info--name"><a href= "http://localhost:3000/admin-dash/<%=e._id%>"> <%=e.username%></a></h3>
+              
+              <div class="post-info--city">
+                <i class="fas fa-map-marker-alt bigger"></i> <%=e.ville%>
+              </div>
+            </div>
+          </div>
+          <div class="post-content">
+            <p class="post-content--text">
+              <%= e.firstname%> <%= e.lastname%>
+            <br><hr><%= e.email%> <br><hr><%= e.quartier%></p>
+          </div>
+        </div>
+        <% })%>
+
+<%- include('dashboard_footer') -%>

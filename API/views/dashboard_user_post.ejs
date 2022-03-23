@@ -1,0 +1,29 @@
+<%- include('dashboard_Header') -%>
+
+        <h1 id="tag" class="h2"><%=currentUser.username%> Posts</h1>
+        <hr>
+      </div>
+       <% if(posts !== []){ posts.forEach(e=>{ %>
+        <div class="feed-card post">
+          <div class="post-header">
+            <span><i class="bi bi-person-bounding-box"></i></span>
+            <div class="post-info">
+              <h3 class="post-info--name"><%=currentUser.username%></h3>
+              <button class="btn ms-auto"><a href="http://localhost:3000/admin-dash/user-post-delete/<%=e._id%>">Delete</a>
+              </button>
+              <div class="post-info--city">
+                <i class="fas fa-map-marker-alt"></i> <%=e.postville%>
+              </div>
+            </div>
+          </div>
+          <div class="post-content">
+            <p class="post-content--text">
+              <%= e.content%> 
+              <br>
+              <img src="<%=e.img%>" alt="">
+            <br><hr><%= e.userId%> <br><hr><%= e.postquartier%></p>
+          </div>
+        </div>
+        <% })}%>
+
+<%- include('dashboard_footer') -%>

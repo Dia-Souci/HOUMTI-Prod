@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <script defer src="./js/login.js"></script>
+
+    <title>Houmti</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- <nav class="nav">
+        <a href="#"
+          ><img class="logo" src="./images/Logo/logo2.png" alt=""
+        /></a>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <ul class="nav-links">
+          <li class="nav-item ">
+            <div class="nav-link btn-primary signup-scroll">S'inscrire</div>
+          </li>
+          <li class="nav-item "><div class="nav-link signin-scroll">Se connecter</div></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav> -->
+
+      <nav class="navbar">
+        <a href="#"
+          ><img class="logo" src="./images/Logo/logo2.png" alt=""
+        /></a>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li>
+              <div class="nav-link btn-primary signup-scroll">S'inscrire</div>
+            </li>
+            <li><div class="nav-link signin-scroll">Se connecter</div></li>
+            <li>
+              <div class="nav-link"><a href="#">Contact</a></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="showcase">
+        <div class="showcase-content">
+          <div class="header-title">
+            <h1>Bienvenue à Houmti</h1>
+            <h4>
+              la meilleure plateforme pour être un membre actif de votre
+              communauté locale
+            </h4>
+            <button class="btn--text signup-scroll">S'inscrire &darr;</button>
+          </div>
+
+          <img
+            src="./images/images/showcase.svg"
+            alt="showcase"
+            class="showcase-img"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="section--forms">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="" method="" class="signin-form">
+            <h2 class="title">Se connecter</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input
+                name="email"
+                type="text"
+                placeholder="Email"
+                id="signin-email"
+              />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                name="password"
+                type="password"
+                placeholder="Mot de passe"
+                id="signin-password"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Se connecter"
+              class="btn-primary submit-form"
+              id="login-button"
+            />
+          </form>
+
+          <form action="" class="signup-form">
+            <h2 class="title">S'inscrire</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Nom" id="signup-lastname" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Prenom" id="signup-firstname" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" id="signup-username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="Email" placeholder="Email" id="signup-email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-city"></i>
+              <input type="text" placeholder="Ville" id="signup-ville" />
+            </div>
+            <div class="input-field">
+              <i class="far fa-building"></i>
+              <input type="text" placeholder="Quartier" id="signup-quartier" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Mot de pass"
+                id="signup-password"
+              />
+            </div>
+            <input
+              type="submit"
+              value="S'inscrire"
+              class="btn-primary submit-form"
+              id="signup-button"
+            />
+          </form>
+          
+          </div>
+        </div>
+
+        <div class="panels-container">
+          <div class="panel left-panel">
+            <div class="content">
+              <h3>Nouveau ici ?</h3>
+              <p>
+                Avec Houmti, partagez et restez en contact avec votre communauté
+                locale
+              </p>
+              <button class="btn-primary transparent" id="signup-btn">
+                S'inscrire
+              </button>
+            </div>
+            <img src="./images/images/log.svg" class="image" alt="" />
+          </div>
+          <div class="panel right-panel">
+            <div class="content">
+              <h3>Avez vous déjà un compte ?</h3>
+              <p>Accéder à votre profil d'ici</p>
+              <button class="btn-primary transparent" id="signin-btn">
+                Se connecter
+              </button>
+            </div>
+            <img src="./images/images/register.svg" class="image" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script defer src="/settings.js"></script>
+
+    <title>Paramètres</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <nav class="nav">
+        <a href="#"><img class="logo" src="/images/logo2.png" alt="" /></a>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <img
+              class="profile-picture"
+              src="/images/profile.jpg"
+              alt="profile-picture"
+            />
+          </li>
+        </ul>
+      </nav>
+    </nav>
+
+    <div class="content-container">
+      <div class="content">
+        <div class="menu-container">
+          <div class="menu-card menu-section profile-info-card">
+            <img
+              src="/images/profile.jpg"
+              class="profile-picture"
+              alt="profile picture"
+            />
+            <div class="profile-info-card--content">
+              <h3 class="profile-name">Lyes Kellouche</h3>
+              <span class="city-title"
+                ><i class="fas fa-map-marker-alt"></i> Algiers
+              </span>
+            </div>
+          </div>
+
+          <div class="menu-card menu-options">
+            <ul class="menu-links">
+              <li class="menu-link">
+                <a href="http://localhost:3000/main-feed"
+                  ><i class="fas fa-home"></i> Accueil</a
+                >
+              </li>
+              <li class="menu-link">
+                <a href="http://localhost:3000/messages"
+                  ><i class="fas fa-comment"></i> Messages</a
+                >
+              </li>
+              <li class="menu-link">
+                <a href="http://localhost:3000/profile"
+                  ><i class="fas fa-user-alt"></i> Mon Profil</a
+                >
+              </li>
+              <li class="menu-link menu-link--active">
+                <a href="http://localhost:3000/settings"><i class="fas fa-cog"></i> Paramètres</a>
+              </li>
+              <li class="menu-link">
+                <a href="#"
+                  ><i class="fas fa-sign-out-alt"></i> Se déconnecter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="settings-options">
+          <div class="submenu-options-container">
+            <ul class="options-tabs">
+              <li class="options-tab tab--active" id="tab-1 " data-tab="1">
+                <i class="far fa-edit"></i> Modifier le profil
+              </li>
+              <li class="options-tab" id="tab-2" data-tab="2">
+                <i class="fas fa-key"></i> Changer le mot de passe
+              </li>
+              <li class="options-tab" id="tab-3" data-tab="3">
+                <i class="far fa-building"></i> Changer la Ville/Quartier
+              </li>
+            </ul>
+          </div>
+          <div class="tabs-content">
+            <div class="tab-content settings-tab-1 edit-profile-container">
+              <h2 class="page-title">
+                <i class="far fa-edit"></i> Modifier le profil
+              </h2>
+              <div class="edit-profile">
+                <div class="edit-profile-picture">
+                  <img
+                    src="/images/profile.jpg"
+                    class="profile-picture--big"
+                    alt="profile picture"
+                  />
+                  <div class="edit-icon"><i class="fas fa-pen"></i></div>
+                </div>
+
+                <div class="edit-profile-form">
+                  <div class="input-field">
+                    <label for="">Prénom</label>
+                    <input type="text" />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Nom</label>
+                    <input type="text" />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Email</label>
+                    <input type="email" />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Ville</label>
+                    <input type="text" />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Quartier</label>
+                    <input type="text" />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Mot de passe</label>
+                    <input type="password" />
+                  </div>
+
+                  <input
+                    type="submit"
+                    value="Valider"
+                    class="btn btn-edit-profile"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content hidden settings-tab-2 change-password">
+              <h2 class="page-title">
+                <i class="fas fa-key"></i> Changer le mot de passe
+              </h2>
+              <div class="edit-password-form">
+                <div class="input-field">
+                  <label for="">Email</label>
+                  <input type="email" />
+                </div>
+
+                <div class="input-field">
+                  <label for="">Mot de passe actuel</label>
+                  <input type="password" />
+                </div>
+
+                <div class="input-field">
+                  <label for="">Nouveau mot de passe</label>
+                  <input type="password" />
+                </div>
+
+                <div class="input-field">
+                  <label for="">Confirmez le mot de passe</label>
+                  <input type="password" />
+                </div>
+
+                <input
+                  type="submit"
+                  value="Valider"
+                  class="btn btn-edit-password"
+                />
+              </div>
+            </div>
+
+            <div class="tab-content hidden settings-tab-3 change-city">
+              <h2 class="page-title">
+                <i class="far fa-building"></i> Changer la Ville/Quartier
+              </h2>
+              <div class="edit-city-form">
+                <div class="input-field">
+                  <label for="">Email</label>
+                  <input type="email" />
+                </div>
+
+                <div class="input-field">
+                  <label for="">Nouveau Quartier</label>
+                  <input type="text" />
+                </div>
+
+                <div class="input-field">
+                  <label for="">Nouvelle Ville</label>
+                  <input type="text" />
+                </div>
+
+                <div class="input-field">
+                  <label for="">Mot de passe</label>
+                  <input type="password" />
+                </div>
+
+                <input
+                  type="submit"
+                  value="Valider"
+                  class="btn btn-edit-city"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

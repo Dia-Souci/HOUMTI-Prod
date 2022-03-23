@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/profileApp.js"></script>
+    <title>Mon Profil</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <nav class="nav">
+        <a href="#"><img class="logo" src="./images/logo2.png" alt="" /></a>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <img
+              class="profile-picture profile-picture-user"
+              src=""
+              alt="profile-picture"
+            />
+          </li>
+        </ul>
+      </nav>
+    </nav>
+
+    <!-- <div class="myprofile-banner-container">
+      <div class="myprofile-banner">
+        <img
+          class="profile-picture--big"
+          src="./images/profile.jpg"
+          alt="profile-picture"
+        />
+
+        <div class="myprofile-info">
+          <p class="profile-name">Lyes Kellouche</p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="content-container">
+      <div class="content">
+        <div class="menu-container myprofile-menu">
+          <div class="menu-card menu-section profile-info-card">
+            <img
+              src=""
+              class="profile-picture profile-picture-user"
+              alt="profile picture"
+            />
+            <div class="profile-info-card--content">
+              <h3 class="profile-name"></h3>
+              <span class="city-title"
+                ><i class="fas fa-map-marker-alt"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="menu-card menu-options">
+            <ul class="menu-links">
+              <li class="menu-link">
+                <a href="/main-feed"
+                  ><i class="fas fa-home"></i> <span>Accueil</span>
+                </a>
+              </li>
+              <li class="menu-link">
+                <a href="/messages"
+                  ><i class="fas fa-comment"></i> <span> Messages</span></a
+                >
+              </li>
+              <li class="menu-link menu-link--active">
+                <a href="/profile"
+                  ><i class="fas fa-user-alt"></i><span>Mon Profil</span>
+                </a>
+              </li>
+              <li class="menu-link">
+                <a href="/settings"
+                  ><i class="fas fa-cog"></i><span>Paramètres </span>
+                </a>
+              </li>
+              <li class="menu-link logout" id="signout-button">
+                <i class="fas fa-sign-out-alt"></i><span>Se déconnecter</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feed-container profile-feed">
+          <div class="posts-container">
+            <div class="feed-card myprofile-banner-container">
+              <div class="myprofile-banner"></div>
+              <div class="myprofile-image-container">
+                <img
+                  src=""
+                  alt="Profile Picture"
+                  class="profile-picture--big profile-picture-user"
+                />
+                <h2 class="myprofile-name">Lyes Kellouche</h2>
+              </div>
+
+              <div class="myprofile-info">
+                <div class="personal-info">
+                  <span class="quartier">
+                    <i class="far fa-building"></i> Bab Ezzouar
+                  </span>
+                  <span class="posts-number">
+                    <i class="fas fa-pen"></i> 22 publications</span
+                  >
+                </div>
+                <a href="/settings" class="btn btn-edit-myprofile"
+                  ><i class="far fa-edit"></i> Modifier Le Profil</a
+                >
+              </div>
+            </div>
+            <div style="visibility: hidden" class="feed-card post">
+              <div class="post-header">
+                <img
+                  class="profile-picture"
+                  src="./images/profile.jpg"
+                  alt="profile-picture"
+                />
+                <div class="post-info">
+                  <h3 class="post-info--name">Lyes Kellouche</h3>
+                  <div class="post-info--city">
+                    <i class="fas fa-map-marker-alt"></i> Bab Ezzouar
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-content">
+                <p class="post-content--text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Provident, eum perferendis cupiditate soluta adipisci ullam
+                  earum non ipsam eaque vel.
+                </p>
+              </div>
+
+              <div class="feedback">
+                <div class="like-button">
+                  <i class="far fa-thumbs-up"></i>
+
+                  <span class="likes-num">45</span>
+                </div>
+                <div class="interested-button">
+                  <i class="far fa-star"></i>
+
+                  <span class="likes-num">45</span>
+                </div>
+                <div class="comment-button">
+                  <i class="far fa-comment"></i>
+                  <span class="comments-num">4</span>
+                </div>
+
+                <input type="text" placeholder="Laissez un commentaire" />
+                <i class="far fa-paper-plane"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
